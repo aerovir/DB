@@ -8,5 +8,5 @@ actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://localhost/DB/web/
+            url: http://dobrayabanya/
         - \Helper\Acceptance

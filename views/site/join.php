@@ -1,1 +1,1 @@
-<h1>Join</h1>
+<h1>Join us</h1>

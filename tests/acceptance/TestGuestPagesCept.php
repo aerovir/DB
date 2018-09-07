@@ -1,8 +1,8 @@
-<?php 
+<?php
 $I = new AcceptanceTester($scenario);
 $I->wantTo('Open the home/join/login pages');
 $I->amOnPage('/');
-$I->see('Hello', 'h1');
+$I->see('Добро пожаловать', 'h1');
 $I->seeLink('Join', '/site/join');
 $I->seeLink('Login', '/site/login');
 
