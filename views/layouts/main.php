@@ -28,11 +28,11 @@ use yii\bootstrap\Nav;
         ]);
         NavBar::end();
     ?>
+
     <div class="content" style="margin-top: 80px; margin-left: 90px">
         <?= $content ?>
+
     </div>
-
-
     </body>
     <?php $this->endBody(); ?>
 </html>
