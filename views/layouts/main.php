@@ -19,8 +19,8 @@ use yii\bootstrap\Nav;
                 ]
             ]);
         $menu = [
-                ['label' => 'Регистрация', 'url' => ['/site/join']],
-                ['label' => 'Вход', 'url' => ['/site/login']]
+                ['label' => 'Регистрация',  'url' => ['/user/join']],
+                ['label' => 'Вход',         'url' => ['/user/login']]
         ];
         echo Nav::widget([
             'options'   => ['class' => 'navbar-nav navbar-right'],
