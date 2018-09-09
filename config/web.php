@@ -15,7 +15,8 @@
             ],
             'request' => [
                 'cookieValidationKey' => '1234567890'
-            ]
+            ],
+            'db' => require (__DIR__ . '/db.php')
         ],
         'modules' => [
             'debug' => 'yii\debug\Module'
