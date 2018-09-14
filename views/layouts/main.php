@@ -19,6 +19,7 @@ use yii\bootstrap\Nav;
                 ]
             ]);
         $menu = [
+                ['label' => 'база данных', 'url' => ['/user/datapage']],
                 ['label' => 'Регистрация',  'url' => ['/user/join']],
                 ['label' => 'Вход',         'url' => ['/user/login']]
         ];

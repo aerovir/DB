@@ -7,11 +7,11 @@ class TestUserJoin extends \AcceptanceTester
     public function imagineUser()
     {
         $I = $this;
-        $user = [
-            'name' => 'John',
-            'email' => 'mail@mail.rf',
-            'password' => '123456'
-        ];
+        $this->name     = 'John';
+        $this->email    = 'mail@mail.rf';
+        $this->passhash = '123456';
+        $this->status   = 2;
+
         print_r($user);
         return $user;
     }
