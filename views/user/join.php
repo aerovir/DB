@@ -1,12 +1,18 @@
+<?php
+    use yii\widgets\ActiveForm;
+?>
 <div class="panel panel-warning">
     <div class="panel-heading">
         <h1>Join us</h1>
     </div>
     <div class="panel-body">
-        name<br/>
-        email<br/>
-        password<br/>
-        password2<br/>
-        [Create]
+<?php $form = ActiveForm::begin(['id' => 'user-join-form']); ?>
+    <?= $form->field($userJoinForm, 'name') ?>
+    <?= $form->field($userJoinForm, 'email') ?>
+    <?= $form->field($userJoinForm, 'password')->passwordInput() ?>
+    <?= $form->field($userJoinForm, 'password2')->passwordInput() ?>
+        <?= \yii\helpers\Html::submitButton('Создать',
+    ['class' => 'btn btn-danger']) ?>
+    <?php ActiveForm::end(); ?>
     </div>
 </div>
