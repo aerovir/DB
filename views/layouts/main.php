@@ -18,11 +18,18 @@ use yii\bootstrap\Nav;
                     'class' => 'navbar-default navbar-fixed-top'
                 ]
             ]);
-        $menu = [
-                ['label' => 'база данных', 'url' => ['/user/datapage']],
-                ['label' => 'Регистрация',  'url' => ['/user/join']],
+        if (Yii::$app->user->isGuest)
+            $menu = [
+
+                ['label' => 'регистрация',  'url' => ['/user/join']],
                 ['label' => 'Вход',         'url' => ['/user/login']]
         ];
+        else
+            $menu = [
+                ['label' => Yii::$app->user->getIdentity()->name],
+                ['label' => 'база данных', 'url' => ['/user/datapage']],
+                ['label' => 'выход',         'url' => ['/user/logout']]
+                ];
         echo Nav::widget([
             'options'   => ['class' => 'navbar-nav navbar-right'],
             'items'     => $menu
